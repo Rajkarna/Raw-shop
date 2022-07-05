@@ -18,10 +18,14 @@
       align-items: center;
       justify-content: flex-end;
 
-      option {
+      .option {
           padding: 20px 80px;
+          cursor: pointer;
       }
+
+     
   
     }
 
   }
+
