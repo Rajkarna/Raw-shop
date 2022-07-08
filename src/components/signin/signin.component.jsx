@@ -2,6 +2,9 @@ import React , {Component} from 'react'
 import { signInWithGoogle, auth } from '../../firebase/firebase.utils'
 import CustomButton from '../custom-button/custom-button.component'
 import FormInput from '../form-input/form-input-component'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCake } from '@fortawesome/free-solid-svg-icons'
+
 
 import './signin.styles.scss'
 
@@ -36,7 +39,7 @@ class SignIn extends Component{
     render() {
         return (
             <div className='sign-in'>
-                <h3>I already have an acoount</h3>
+                <h3 className='title'>I already have an acoount</h3>
                 <span>sign in with email and password</span>
 
 
@@ -62,7 +65,7 @@ class SignIn extends Component{
 
                 <div className='buttons'>
                     <CustomButton type="submit"> sign in</CustomButton>
-                    <CustomButton onClick={signInWithGoogle} isGoogleSignIn>sign In With Google</CustomButton>
+                    <CustomButton onClick={signInWithGoogle} isGoogleSignIn>sign <FontAwesomeIcon icon={faCake} /> </CustomButton>
                 </div>
                 </form>
             </div>
