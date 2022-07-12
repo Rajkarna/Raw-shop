@@ -16,8 +16,9 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: auto;
+    // overflow-y:visible;
+    // overflow-x: hidden;
   }
 
   button {
